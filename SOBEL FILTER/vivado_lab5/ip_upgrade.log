@@ -1,0 +1,499 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Mon Jun 24 18:35:36 2019
+| Host         : linux-e4n3 running 64-bit openSUSE Leap 42.2
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sobel_sw_new_3_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_sobel_sw_new_3_0 (xilinx.com:hls:sobel_sw_new:1.0) from (Rev. 1906241813) to (Rev. 1906241834)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Mon Jun 24 18:35:36 2019
+| Host         : linux-e4n3 running 64-bit openSUSE Leap 42.2
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sobel_sw_new_2_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_sobel_sw_new_2_0 (xilinx.com:hls:sobel_sw_new:1.0) from (Rev. 1906241813) to (Rev. 1906241834)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Mon Jun 24 18:35:36 2019
+| Host         : linux-e4n3 running 64-bit openSUSE Leap 42.2
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sobel_sw_new_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_sobel_sw_new_1_0 (xilinx.com:hls:sobel_sw_new:1.0) from (Rev. 1906241813) to (Rev. 1906241834)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Mon Jun 24 18:35:36 2019
+| Host         : linux-e4n3 running 64-bit openSUSE Leap 42.2
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sobel_sw_new_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_sobel_sw_new_0_0 (xilinx.com:hls:sobel_sw_new:1.0) from (Rev. 1906241813) to (Rev. 1906241834)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Mon Jun 24 18:15:35 2019
+| Host         : linux-e4n3 running 64-bit openSUSE Leap 42.2
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sobel_sw_new_3_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_sobel_sw_new_3_0 (xilinx.com:hls:sobel_sw_new:1.0) from (Rev. 1906241436) to (Rev. 1906241813)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Mon Jun 24 18:15:35 2019
+| Host         : linux-e4n3 running 64-bit openSUSE Leap 42.2
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sobel_sw_new_2_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_sobel_sw_new_2_0 (xilinx.com:hls:sobel_sw_new:1.0) from (Rev. 1906241436) to (Rev. 1906241813)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Mon Jun 24 18:15:35 2019
+| Host         : linux-e4n3 running 64-bit openSUSE Leap 42.2
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sobel_sw_new_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_sobel_sw_new_1_0 (xilinx.com:hls:sobel_sw_new:1.0) from (Rev. 1906241436) to (Rev. 1906241813)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Mon Jun 24 18:15:35 2019
+| Host         : linux-e4n3 running 64-bit openSUSE Leap 42.2
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sobel_sw_new_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_sobel_sw_new_0_0 (xilinx.com:hls:sobel_sw_new:1.0) from (Rev. 1906241436) to (Rev. 1906241813)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Mon Jun 24 14:37:46 2019
+| Host         : linux-e4n3 running 64-bit openSUSE Leap 42.2
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sobel_sw_new_3_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_sobel_sw_new_3_0 (xilinx.com:hls:sobel_sw_new:1.0) from (Rev. 1906232052) to (Rev. 1906241436)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Mon Jun 24 14:37:46 2019
+| Host         : linux-e4n3 running 64-bit openSUSE Leap 42.2
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sobel_sw_new_2_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_sobel_sw_new_2_0 (xilinx.com:hls:sobel_sw_new:1.0) from (Rev. 1906232052) to (Rev. 1906241436)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Mon Jun 24 14:37:46 2019
+| Host         : linux-e4n3 running 64-bit openSUSE Leap 42.2
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sobel_sw_new_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_sobel_sw_new_1_0 (xilinx.com:hls:sobel_sw_new:1.0) from (Rev. 1906232052) to (Rev. 1906241436)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Mon Jun 24 14:37:46 2019
+| Host         : linux-e4n3 running 64-bit openSUSE Leap 42.2
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sobel_sw_new_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_sobel_sw_new_0_0 (xilinx.com:hls:sobel_sw_new:1.0) from (Rev. 1906232052) to (Rev. 1906241436)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Sun Jun 23 20:54:12 2019
+| Host         : linux-e4n3 running 64-bit openSUSE Leap 42.2
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sobel_sw_new_3_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_sobel_sw_new_3_0 (xilinx.com:hls:sobel_sw_new:1.0) from (Rev. 1906232031) to (Rev. 1906232052)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Sun Jun 23 20:54:12 2019
+| Host         : linux-e4n3 running 64-bit openSUSE Leap 42.2
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sobel_sw_new_2_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_sobel_sw_new_2_0 (xilinx.com:hls:sobel_sw_new:1.0) from (Rev. 1906232031) to (Rev. 1906232052)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Sun Jun 23 20:54:12 2019
+| Host         : linux-e4n3 running 64-bit openSUSE Leap 42.2
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sobel_sw_new_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_sobel_sw_new_1_0 (xilinx.com:hls:sobel_sw_new:1.0) from (Rev. 1906232031) to (Rev. 1906232052)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Sun Jun 23 20:54:12 2019
+| Host         : linux-e4n3 running 64-bit openSUSE Leap 42.2
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sobel_sw_new_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_sobel_sw_new_0_0 (xilinx.com:hls:sobel_sw_new:1.0) from (Rev. 1906232031) to (Rev. 1906232052)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Sun Jun 23 20:33:34 2019
+| Host         : linux-e4n3 running 64-bit openSUSE Leap 42.2
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sobel_sw_new_3_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_sobel_sw_new_3_0 (xilinx.com:hls:sobel_sw_new:1.0) from (Rev. 1906231943) to (Rev. 1906232031)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Sun Jun 23 20:33:34 2019
+| Host         : linux-e4n3 running 64-bit openSUSE Leap 42.2
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sobel_sw_new_2_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_sobel_sw_new_2_0 (xilinx.com:hls:sobel_sw_new:1.0) from (Rev. 1906231943) to (Rev. 1906232031)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Sun Jun 23 20:33:34 2019
+| Host         : linux-e4n3 running 64-bit openSUSE Leap 42.2
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sobel_sw_new_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_sobel_sw_new_1_0 (xilinx.com:hls:sobel_sw_new:1.0) from (Rev. 1906231943) to (Rev. 1906232031)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Sun Jun 23 20:33:34 2019
+| Host         : linux-e4n3 running 64-bit openSUSE Leap 42.2
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sobel_sw_new_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_sobel_sw_new_0_0 (xilinx.com:hls:sobel_sw_new:1.0) from (Rev. 1906231943) to (Rev. 1906232031)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Sun Jun 23 19:43:51 2019
+| Host         : linux-e4n3 running 64-bit openSUSE Leap 42.2
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sobel_sw_new_3_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_sobel_sw_new_3_0 (xilinx.com:hls:sobel_sw_new:1.0) from (Rev. 1906231855) to (Rev. 1906231943)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Sun Jun 23 19:43:51 2019
+| Host         : linux-e4n3 running 64-bit openSUSE Leap 42.2
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sobel_sw_new_2_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_sobel_sw_new_2_0 (xilinx.com:hls:sobel_sw_new:1.0) from (Rev. 1906231855) to (Rev. 1906231943)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Sun Jun 23 19:43:51 2019
+| Host         : linux-e4n3 running 64-bit openSUSE Leap 42.2
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sobel_sw_new_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_sobel_sw_new_1_0 (xilinx.com:hls:sobel_sw_new:1.0) from (Rev. 1906231855) to (Rev. 1906231943)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Sun Jun 23 19:43:51 2019
+| Host         : linux-e4n3 running 64-bit openSUSE Leap 42.2
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sobel_sw_new_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_sobel_sw_new_0_0 (xilinx.com:hls:sobel_sw_new:1.0) from (Rev. 1906231855) to (Rev. 1906231943)
+

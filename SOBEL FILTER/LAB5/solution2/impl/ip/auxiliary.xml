@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="sobel_sw_new" xd:componentRef="sobel_sw_new" xd:initiationInterval="1839628" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_CTRL_BUS" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="input[]" xd:originalName="input" xd:direction="inout" xd:interfaceRef="m_axi_INPUT_r" xd:busTypeRef="aximm" xd:arraySize="264192" xd:dataWidth="8" xd:bufferDirection="in"/>
+  <xd:arg xd:name="output[]" xd:originalName="output" xd:direction="inout" xd:interfaceRef="m_axi_OUTPUT_r" xd:busTypeRef="aximm" xd:arraySize="264192" xd:dataWidth="8" xd:bufferDirection="out"/>
+  <xd:arg xd:name="input_r_r" xd:originalName="input_r_r" xd:direction="in" xd:interfaceRef="s_axi_CTRL_BUS" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="output_r_r" xd:originalName="output_r_r" xd:direction="in" xd:interfaceRef="s_axi_CTRL_BUS" xd:busTypeRef="axilite" xd:offset="0x18" xd:handshakeRef="ap_none"/>
+  <xd:latencyEstimates xd:best-case="1052939" xd:worst-case="1839627" xd:average-case="1446411"/>
+  <xd:resourceEstimates xd:LUT="15921" xd:FF="21296" xd:BRAM="6" xd:DSP="0"/>
+</xd:acceleratorMap>

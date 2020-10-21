@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'sobel_sw_new/output_r' to 'sobel_sw_new/output_r_r' to avoid the conflict with HDL keywords or other object names." projectName="LAB5" solutionName="solution2" date="2019-06-24T19:17:34.123+0300" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'sobel_sw_new/input_r' to 'sobel_sw_new/input_r_r' to avoid the conflict with HDL keywords or other object names." projectName="LAB5" solutionName="solution2" date="2019-06-24T19:17:34.072+0300" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-21] The critical path consists of the following:&#xA;&#x9;'select' operation ('abs5', ../sobel_sw_new.c:26->../sobel_sw_new.c:85) (2.07 ns)&#xA;&#x9;'add' operation ('p', ../sobel_sw_new.c:85) (2.33 ns)&#xA;&#x9;'icmp' operation ('icmp', ../sobel_sw_new.c:86) (3.1 ns)&#xA;&#x9;blocking operation 2.07 ns on control path)" projectName="LAB5" solutionName="solution2" date="2019-06-24T19:17:33.482+0300" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-21] Estimated clock period (9.56ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns)." projectName="LAB5" solutionName="solution2" date="2019-06-24T19:17:33.451+0300" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('small_input_load_4', ../sobel_sw_new.c:44->../sobel_sw_new.c:85) on array 'small_input', ../sobel_sw_new.c:65 due to limited memory ports." projectName="LAB5" solutionName="solution2" date="2019-06-24T19:17:33.399+0300" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'sobel_sw_new/output' to 'sobel_sw_new/output_r' to avoid the conflict with HDL keywords or other object names." projectName="LAB5" solutionName="solution2" date="2019-06-24T19:17:33.194+0300" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'sobel_sw_new/input' to 'sobel_sw_new/input_r' to avoid the conflict with HDL keywords or other object names." projectName="LAB5" solutionName="solution2" date="2019-06-24T19:17:33.179+0300" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'sobel_sw_new/OUTPUT' to 'sobel_sw_new/OUTPUT_r' to avoid the conflict with HDL keywords or other object names." projectName="LAB5" solutionName="solution2" date="2019-06-24T19:17:33.148+0300" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'sobel_sw_new/INPUT' to 'sobel_sw_new/INPUT_r' to avoid the conflict with HDL keywords or other object names." projectName="LAB5" solutionName="solution2" date="2019-06-24T19:17:33.103+0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-542] more than one sub loop." projectName="LAB5" solutionName="solution2" date="2019-06-24T19:17:32.821+0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-542] Cannot flatten a loop nest 'sobel_1_external' (../sobel_sw_new.c:74:44) in function 'sobel_sw_new' : " projectName="LAB5" solutionName="solution2" date="2019-06-24T19:17:32.737+0300" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Directive 'UNROLL' cannot be applied: Label 'move2' does not exist in function 'sobel_sw_new'. " projectName="LAB5" solutionName="solution2" date="2019-06-24T19:17:31.606+0300" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/null/null'." projectName="LAB5" solutionName="solution2" date="2019-06-24T19:17:28.092+0300" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library '/opt/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/null/null.lib'." projectName="LAB5" solutionName="solution2" date="2019-06-24T19:17:27.781+0300" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] No /home/inf2015/dchristodoulou/CE435/LAB5/solution1/solution1.aps file found." projectName="LAB5" solutionName="solution2" date="2019-06-24T19:17:27.753+0300" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

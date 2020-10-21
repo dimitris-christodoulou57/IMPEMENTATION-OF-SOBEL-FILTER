@@ -1,0 +1,16 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="sobel_sw_new" label="sobel_1_internal" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="sobel_sw_new" label="move2" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="sobel_sw_new" label="move" functionLabel="">
+            <pragma name="PIPELINE">
+                <option name="II" value="1"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

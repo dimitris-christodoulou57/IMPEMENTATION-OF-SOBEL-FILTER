@@ -1,0 +1,81 @@
+
+*** Running vivado
+    with args -log design_1_xbar_2.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_xbar_2.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source design_1_xbar_2.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1190.148 ; gain = 79.000 ; free physical = 24347 ; free virtual = 29257
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_2' [/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.srcs/sources_1/bd/design_1/ip/design_1_xbar_2/synth/design_1_xbar_2.v:59]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_14_axi_crossbar' [/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.srcs/sources_1/bd/design_1/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:4882]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_14_crossbar_sasd' [/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.srcs/sources_1/bd/design_1/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_14_addr_decoder' [/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.srcs/sources_1/bd/design_1/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.srcs/sources_1/bd/design_1/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.srcs/sources_1/bd/design_1/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (1#1) [/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.srcs/sources_1/bd/design_1/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (2#1) [/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.srcs/sources_1/bd/design_1/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.srcs/sources_1/bd/design_1/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (2#1) [/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.srcs/sources_1/bd/design_1/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' [/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.srcs/sources_1/bd/design_1/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' (2#1) [/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.srcs/sources_1/bd/design_1/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized2' [/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.srcs/sources_1/bd/design_1/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized2' (2#1) [/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.srcs/sources_1/bd/design_1/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_14_addr_decoder' (3#1) [/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.srcs/sources_1/bd/design_1/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_14_decerr_slave' [/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.srcs/sources_1/bd/design_1/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_14_decerr_slave' (4#1) [/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.srcs/sources_1/bd/design_1/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_14_addr_arbiter_sasd' [/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.srcs/sources_1/bd/design_1/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_14_addr_arbiter_sasd' (5#1) [/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.srcs/sources_1/bd/design_1/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_14_splitter' [/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.srcs/sources_1/bd/design_1/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_14_splitter' (6#1) [/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.srcs/sources_1/bd/design_1/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_14_splitter__parameterized0' [/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.srcs/sources_1/bd/design_1/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_14_splitter__parameterized0' (6#1) [/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.srcs/sources_1/bd/design_1/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.srcs/sources_1/bd/design_1/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (7#1) [/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.srcs/sources_1/bd/design_1/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.srcs/sources_1/bd/design_1/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (7#1) [/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.srcs/sources_1/bd/design_1/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.srcs/sources_1/bd/design_1/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (7#1) [/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.srcs/sources_1/bd/design_1/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_13_axic_register_slice' [/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.srcs/sources_1/bd/design_1/ipshared/55c0/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_13_axic_register_slice' (8#1) [/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.srcs/sources_1/bd/design_1/ipshared/55c0/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.srcs/sources_1/bd/design_1/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (8#1) [/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.srcs/sources_1/bd/design_1/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_14_crossbar_sasd' (9#1) [/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.srcs/sources_1/bd/design_1/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_14_axi_crossbar' (10#1) [/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.srcs/sources_1/bd/design_1/ipshared/f582/hdl/axi_crossbar_v2_1_vl_rfs.v:4882]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xbar_2' (11#1) [/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.srcs/sources_1/bd/design_1/ip/design_1_xbar_2/synth/design_1_xbar_2.v:59]
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1310.652 ; gain = 199.504 ; free physical = 24685 ; free virtual = 29596
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1310.652 ; gain = 199.504 ; free physical = 24663 ; free virtual = 29574
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1600.109 ; gain = 0.004 ; free physical = 24781 ; free virtual = 29694
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1600.109 ; gain = 488.961 ; free physical = 24867 ; free virtual = 29783
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1600.109 ; gain = 488.961 ; free physical = 24867 ; free virtual = 29783
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1600.109 ; gain = 488.961 ; free physical = 24868 ; free virtual = 29785
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1600.109 ; gain = 488.961 ; free physical = 24803 ; free virtual = 29720
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1600.113 ; gain = 488.965 ; free physical = 24766 ; free virtual = 29682
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1600.113 ; gain = 488.965 ; free physical = 24663 ; free virtual = 29581
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1600.113 ; gain = 488.965 ; free physical = 24574 ; free virtual = 29492
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1600.113 ; gain = 488.965 ; free physical = 24566 ; free virtual = 29484
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1600.113 ; gain = 488.965 ; free physical = 24600 ; free virtual = 29521
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1600.113 ; gain = 488.965 ; free physical = 24598 ; free virtual = 29519
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1600.113 ; gain = 488.965 ; free physical = 24558 ; free virtual = 29478
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1600.113 ; gain = 488.965 ; free physical = 24552 ; free virtual = 29472
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1600.113 ; gain = 488.965 ; free physical = 24550 ; free virtual = 29471
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1600.113 ; gain = 488.965 ; free physical = 24603 ; free virtual = 29524
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     2|
+|2     |LUT2 |    11|
+|3     |LUT3 |    45|
+|4     |LUT4 |    53|
+|5     |LUT5 |    60|
+|6     |LUT6 |    56|
+|7     |FDRE |   133|
++------+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1600.113 ; gain = 488.965 ; free physical = 24600 ; free virtual = 29521
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 1600.113 ; gain = 501.551 ; free physical = 24695 ; free virtual = 29614

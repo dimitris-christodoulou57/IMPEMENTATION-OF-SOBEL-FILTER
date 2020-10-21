@@ -1,0 +1,5 @@
+sobel_sw_new_smalbkb
+sobel_sw_new_CTRL_BUS_s_axi
+sobel_sw_new_INPUT_r_m_axi
+sobel_sw_new_OUTPUT_r_m_axi
+sobel_sw_new

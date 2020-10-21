@@ -1,0 +1,3 @@
+lappend pragmaStatus0 {pragma "PIPELINE" source "/home/inf2015/dchristodoulou/CE435/../sobel_sw_new.c" location "sobel_sw_new/sobel_1_internal" found 1 funcFound 1 applied 1 ambiguous 0 reason "null"}
+lappend pragmaStatus1 {pragma "UNROLL" source "/home/inf2015/dchristodoulou/CE435/../sobel_sw_new.c" location "sobel_sw_new/move2" found 0 funcFound 1 applied 0 ambiguous 0 reason "Directive 'UNROLL' cannot be applied: Label 'move2' does not exist in function 'sobel_sw_new'. "}
+lappend pragmaStatus2 {pragma "PIPELINE" source "/home/inf2015/dchristodoulou/CE435/../sobel_sw_new.c" location "sobel_sw_new/move" found 1 funcFound 1 applied 1 ambiguous 0 reason "null"}

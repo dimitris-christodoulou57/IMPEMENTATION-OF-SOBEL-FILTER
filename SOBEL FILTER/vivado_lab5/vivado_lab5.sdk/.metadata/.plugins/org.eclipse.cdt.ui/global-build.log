@@ -1,0 +1,655 @@
+18:28:57 **** Build of project standalone_bsp_0 ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/sobel_sw_new_v1_0/src
+make -C ps7_cortexa9_0/libsrc/sobel_sw_new_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_3/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_7/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_3/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_4/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_2/src
+make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/xilffs_v3_6/src
+make -C ps7_cortexa9_0/libsrc/xilffs_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_4/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling qspips
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling ddrps
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/sobel_sw_new_v1_0/src
+make -C ps7_cortexa9_0/libsrc/sobel_sw_new_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling sobel_sw_new
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_3/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling standalone
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_7/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling scugic
+xscugic_g.c:53:2: warning: missing initializer for field 'HandlerTable' of 'XScuGic_Config {aka struct <anonymous>}' [-Wmissing-field-initializers]
+  }
+  ^
+In file included from xscugic_g.c:41:0:
+xscugic.h:218:27: note: 'HandlerTable' declared here
+  XScuGic_VectorTableEntry HandlerTable[XSCUGIC_MAX_NUM_INTR_INPUTS];/**<
+                           ^~~~~~~~~~~~
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_3/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_4/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling emacps
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling xadcps
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_2/src
+make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling sdps
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v3_6/src
+make -C ps7_cortexa9_0/libsrc/xilffs_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling XilFFs Library
+ff.c: In function 'find_volume':
+ff.c:2610:4: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+    && (LD_DWORD(fs->win+FSI_LeadSig) == 0x41615252U)
+    ^~
+diskio.c:135:11: warning: 'ExtCsd' defined but not used [-Wunused-variable]
+ static u8 ExtCsd[512] __attribute__ ((aligned(32)));
+           ^~~~~~
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_4/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling usbps
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling coresightps_dcc
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling scutimer
+Finished building libraries
+18:29:11 **** Build of configuration Debug for project LAB5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: LAB5.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "LAB5.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: LAB5.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size LAB5.elf  |tee "LAB5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19384	   1148	  22568	  43100	   a85c	LAB5.elf
+Finished building: LAB5.elf.size
+ 
+18:29:37 **** Auto Build of configuration Debug for project LAB5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xsobel_sw_new.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xsobel_sw_new.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xsobel_sw_new.d" -MT"src/xsobel_sw_new.o" -o "src/xsobel_sw_new.o" "../src/xsobel_sw_new.c"
+Finished building: ../src/xsobel_sw_new.c
+ 
+Building file: ../src/xsobel_sw_new_linux.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xsobel_sw_new_linux.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xsobel_sw_new_linux.d" -MT"src/xsobel_sw_new_linux.o" -o "src/xsobel_sw_new_linux.o" "../src/xsobel_sw_new_linux.c"
+Finished building: ../src/xsobel_sw_new_linux.c
+ 
+Building file: ../src/xsobel_sw_new_sinit.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xsobel_sw_new_sinit.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xsobel_sw_new_sinit.d" -MT"src/xsobel_sw_new_sinit.o" -o "src/xsobel_sw_new_sinit.o" "../src/xsobel_sw_new_sinit.c"
+Finished building: ../src/xsobel_sw_new_sinit.c
+ 
+Building target: LAB5.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "LAB5.elf"  ./src/helloworld.o ./src/platform.o ./src/xsobel_sw_new.o ./src/xsobel_sw_new_linux.o ./src/xsobel_sw_new_sinit.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: LAB5.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size LAB5.elf  |tee "LAB5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23704	   1180	  22584	  47468	   b96c	LAB5.elf
+Finished building: LAB5.elf.size
+ 
+18:30:21 **** Auto Build of configuration Debug for project LAB5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: LAB5.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "LAB5.elf"  ./src/helloworld.o ./src/platform.o ./src/xsobel_sw_new.o ./src/xsobel_sw_new_linux.o ./src/xsobel_sw_new_sinit.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `sobel':
+/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.sdk/LAB5/Debug/../src/helloworld.c:256: undefined reference to `pow'
+/home/inf2015/dchristodoulou/CE435/vivado_lab5/vivado_lab5.sdk/LAB5/Debug/../src/helloworld.c:262: undefined reference to `log10'
+collect2: error: ld returned 1 exit status
+make: *** [LAB5.elf] Error 1
+makefile:39: recipe for target 'LAB5.elf' failed
+18:32:04 **** Clean-only build of configuration Debug for project LAB5 ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o ./src/xsobel_sw_new.o ./src/xsobel_sw_new_linux.o ./src/xsobel_sw_new_sinit.o  ./src/helloworld.d ./src/platform.d ./src/xsobel_sw_new.d ./src/xsobel_sw_new_linux.d ./src/xsobel_sw_new_sinit.d  LAB5.elf.size  LAB5.elf
+ 
+18:32:04 **** Auto Build of configuration Debug for project LAB5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building file: ../src/xsobel_sw_new.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xsobel_sw_new.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xsobel_sw_new.d" -MT"src/xsobel_sw_new.o" -o "src/xsobel_sw_new.o" "../src/xsobel_sw_new.c"
+Finished building: ../src/xsobel_sw_new.c
+ 
+Building file: ../src/xsobel_sw_new_linux.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xsobel_sw_new_linux.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xsobel_sw_new_linux.d" -MT"src/xsobel_sw_new_linux.o" -o "src/xsobel_sw_new_linux.o" "../src/xsobel_sw_new_linux.c"
+Finished building: ../src/xsobel_sw_new_linux.c
+ 
+Building file: ../src/xsobel_sw_new_sinit.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xsobel_sw_new_sinit.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xsobel_sw_new_sinit.d" -MT"src/xsobel_sw_new_sinit.o" -o "src/xsobel_sw_new_sinit.o" "../src/xsobel_sw_new_sinit.c"
+Finished building: ../src/xsobel_sw_new_sinit.c
+ 
+Building target: LAB5.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "LAB5.elf"  ./src/helloworld.o ./src/platform.o ./src/xsobel_sw_new.o ./src/xsobel_sw_new_linux.o ./src/xsobel_sw_new_sinit.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: LAB5.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size LAB5.elf  |tee "LAB5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 112356	   2760	3172784	3287900	 322b5c	LAB5.elf
+Finished building: LAB5.elf.size
+ 
+18:32:05 **** Clean-only build of configuration Debug for project LAB5 ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o ./src/xsobel_sw_new.o ./src/xsobel_sw_new_linux.o ./src/xsobel_sw_new_sinit.o  ./src/helloworld.d ./src/platform.d ./src/xsobel_sw_new.d ./src/xsobel_sw_new_linux.d ./src/xsobel_sw_new_sinit.d  LAB5.elf.size  LAB5.elf
+ 
+18:32:06 **** Auto Build of configuration Debug for project LAB5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building file: ../src/xsobel_sw_new.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xsobel_sw_new.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xsobel_sw_new.d" -MT"src/xsobel_sw_new.o" -o "src/xsobel_sw_new.o" "../src/xsobel_sw_new.c"
+Finished building: ../src/xsobel_sw_new.c
+ 
+Building file: ../src/xsobel_sw_new_linux.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xsobel_sw_new_linux.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xsobel_sw_new_linux.d" -MT"src/xsobel_sw_new_linux.o" -o "src/xsobel_sw_new_linux.o" "../src/xsobel_sw_new_linux.c"
+Finished building: ../src/xsobel_sw_new_linux.c
+ 
+Building file: ../src/xsobel_sw_new_sinit.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xsobel_sw_new_sinit.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xsobel_sw_new_sinit.d" -MT"src/xsobel_sw_new_sinit.o" -o "src/xsobel_sw_new_sinit.o" "../src/xsobel_sw_new_sinit.c"
+Finished building: ../src/xsobel_sw_new_sinit.c
+ 
+Building target: LAB5.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "LAB5.elf"  ./src/helloworld.o ./src/platform.o ./src/xsobel_sw_new.o ./src/xsobel_sw_new_linux.o ./src/xsobel_sw_new_sinit.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: LAB5.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size LAB5.elf  |tee "LAB5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 112356	   2760	3172784	3287900	 322b5c	LAB5.elf
+Finished building: LAB5.elf.size
+ 
+18:32:17 **** Incremental Build of configuration Debug for project LAB5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+18:32:35 **** Incremental Build of configuration Debug for project LAB5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+19:25:44 **** Incremental Build of configuration Debug for project LAB5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+19:25:59 **** Incremental Build of configuration Debug for project LAB5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:23:58 **** Auto Build of configuration Debug for project LAB5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: LAB5.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "LAB5.elf"  ./src/helloworld.o ./src/platform.o ./src/xsobel_sw_new.o ./src/xsobel_sw_new_linux.o ./src/xsobel_sw_new_sinit.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: LAB5.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size LAB5.elf  |tee "LAB5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 112316	   2832	3172784	3287932	 322b7c	LAB5.elf
+Finished building: LAB5.elf.size
+ 
+10:24:10 **** Clean-only build of configuration Debug for project LAB5 ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o ./src/xsobel_sw_new.o ./src/xsobel_sw_new_linux.o ./src/xsobel_sw_new_sinit.o  ./src/helloworld.d ./src/platform.d ./src/xsobel_sw_new.d ./src/xsobel_sw_new_linux.d ./src/xsobel_sw_new_sinit.d  LAB5.elf.size  LAB5.elf
+ 
+10:24:10 **** Auto Build of configuration Debug for project LAB5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building file: ../src/xsobel_sw_new.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/xsobel_sw_new.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xsobel_sw_new.d" -MT"src/xsobel_sw_new.o" -o "src/xsobel_sw_new.o" "../src/xsobel_sw_new.c"
+Finished building: ../src/xsobel_sw_new.c
+ 
+Building file: ../src/xsobel_sw_new_linux.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/xsobel_sw_new_linux.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xsobel_sw_new_linux.d" -MT"src/xsobel_sw_new_linux.o" -o "src/xsobel_sw_new_linux.o" "../src/xsobel_sw_new_linux.c"
+Finished building: ../src/xsobel_sw_new_linux.c
+ 
+Building file: ../src/xsobel_sw_new_sinit.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/xsobel_sw_new_sinit.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xsobel_sw_new_sinit.d" -MT"src/xsobel_sw_new_sinit.o" -o "src/xsobel_sw_new_sinit.o" "../src/xsobel_sw_new_sinit.c"
+Finished building: ../src/xsobel_sw_new_sinit.c
+ 
+Building target: LAB5.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "LAB5.elf"  ./src/helloworld.o ./src/platform.o ./src/xsobel_sw_new.o ./src/xsobel_sw_new_linux.o ./src/xsobel_sw_new_sinit.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: LAB5.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size LAB5.elf  |tee "LAB5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 105520	   2832	3172752	3281104	 3210d0	LAB5.elf
+Finished building: LAB5.elf.size
+ 
+10:25:08 **** Incremental Build of configuration Debug for project LAB5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:25:44 **** Incremental Build of configuration Debug for project LAB5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:26:15 **** Incremental Build of configuration Debug for project LAB5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:52:38 **** Auto Build of configuration Debug for project LAB5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: LAB5.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "LAB5.elf"  ./src/helloworld.o ./src/platform.o ./src/xsobel_sw_new.o ./src/xsobel_sw_new_linux.o ./src/xsobel_sw_new_sinit.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: LAB5.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size LAB5.elf  |tee "LAB5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 105304	   2760	3172752	3280816	 320fb0	LAB5.elf
+Finished building: LAB5.elf.size
+ 
+11:06:08 **** Auto Build of configuration Debug for project LAB5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/init_sobel.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/init_sobel.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/init_sobel.d" -MT"src/init_sobel.o" -o "src/init_sobel.o" "../src/init_sobel.c"
+../src/init_sobel.c: In function 'init_sobel':
+../src/init_sobel.c:25:53: error: 'input' undeclared (first use in this function)
+      XSobel_sw_new_Set_input_r_r(&InstancePtr, (u32)input);
+                                                     ^~~~~
+../src/init_sobel.c:25:53: note: each undeclared identifier is reported only once for each function it appears in
+../src/init_sobel.c:26:54: error: 'output' undeclared (first use in this function)
+      XSobel_sw_new_Set_output_r_r(&InstancePtr, (u32)output);
+                                                      ^~~~~~
+../src/init_sobel.c:32:62: error: 'SIZE' undeclared (first use in this function)
+      XSobel_sw_new_Set_input_r_r(&InstancePtr1, (u32)(input+(SIZE*256)));
+                                                              ^~~~
+make: *** [src/init_sobel.o] Error 1
+src/subdir.mk:36: recipe for target 'src/init_sobel.o' failed
+11:06:53 **** Auto Build of configuration Debug for project LAB5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'sobel':
+../src/helloworld.c:190:17: error: 'input' redeclared as different kind of symbol
+   unsigned char input[SIZE*SIZE], output[SIZE*SIZE], golden[SIZE*SIZE];
+                 ^~~~~
+../src/helloworld.c:95:29: note: previous definition of 'input' was here
+ double sobel(unsigned char *input, unsigned char *output, unsigned char *golden)
+                             ^~~~~
+../src/helloworld.c:190:35: error: 'output' redeclared as different kind of symbol
+   unsigned char input[SIZE*SIZE], output[SIZE*SIZE], golden[SIZE*SIZE];
+                                   ^~~~~~
+../src/helloworld.c:95:51: note: previous definition of 'output' was here
+ double sobel(unsigned char *input, unsigned char *output, unsigned char *golden)
+                                                   ^~~~~~
+../src/helloworld.c:190:54: error: 'golden' redeclared as different kind of symbol
+   unsigned char input[SIZE*SIZE], output[SIZE*SIZE], golden[SIZE*SIZE];
+                                                      ^~~~~~
+../src/helloworld.c:95:74: note: previous definition of 'golden' was here
+ double sobel(unsigned char *input, unsigned char *output, unsigned char *golden)
+                                                                          ^~~~~~
+../src/helloworld.c:208:10: error: redefinition of 'sobel'
+   double sobel(unsigned char *input, unsigned char *output, unsigned char *golden)
+          ^~~~~
+../src/helloworld.c:95:8: note: previous definition of 'sobel' was here
+ double sobel(unsigned char *input, unsigned char *output, unsigned char *golden)
+        ^~~~~
+../src/helloworld.c:361:7: warning: 'main' is normally a non-static function [-Wmain]
+   int main(int argc, char* argv[])
+       ^~~~
+At top level:
+../src/helloworld.c:361:7: warning: 'main' defined but not used [-Wunused-function]
+../src/helloworld.c:80:24: warning: 'file3' defined but not used [-Wunused-variable]
+ static FIL file1,file2,file3;
+                        ^~~~~
+../src/helloworld.c:80:18: warning: 'file2' defined but not used [-Wunused-variable]
+ static FIL file1,file2,file3;
+                  ^~~~~
+../src/helloworld.c:80:12: warning: 'file1' defined but not used [-Wunused-variable]
+ static FIL file1,file2,file3;
+            ^~~~~
+../src/helloworld.c:78:14: warning: 'Log_File' defined but not used [-Wunused-variable]
+ static char *Log_File;
+              ^~~~~~~~
+../src/helloworld.c:77:13: warning: 'GOLDEN_FILE' defined but not used [-Wunused-variable]
+ static char GOLDEN_FILE[32] = "golden.gre";
+             ^~~~~~~~~~~
+../src/helloworld.c:76:13: warning: 'OUTPUT_FILE' defined but not used [-Wunused-variable]
+ static char OUTPUT_FILE[32] = "output.gre";
+             ^~~~~~~~~~~
+../src/helloworld.c:75:13: warning: 'INPUT_FILE' defined but not used [-Wunused-variable]
+ static char INPUT_FILE[32] = "input.gre";
+             ^~~~~~~~~~
+src/subdir.mk:36: recipe for target 'src/helloworld.o' failed
+make: *** [src/helloworld.o] Error 1
+11:07:41 **** Auto Build of configuration Debug for project LAB5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'sobel':
+../src/helloworld.c:191:17: error: 'input' redeclared as different kind of symbol
+   unsigned char input[SIZE*SIZE], output[SIZE*SIZE], golden[SIZE*SIZE];
+                 ^~~~~
+../src/helloworld.c:96:29: note: previous definition of 'input' was here
+ double sobel(unsigned char *input, unsigned char *output, unsigned char *golden)
+                             ^~~~~
+../src/helloworld.c:191:35: error: 'output' redeclared as different kind of symbol
+   unsigned char input[SIZE*SIZE], output[SIZE*SIZE], golden[SIZE*SIZE];
+                                   ^~~~~~
+../src/helloworld.c:96:51: note: previous definition of 'output' was here
+ double sobel(unsigned char *input, unsigned char *output, unsigned char *golden)
+                                                   ^~~~~~
+../src/helloworld.c:191:54: error: 'golden' redeclared as different kind of symbol
+   unsigned char input[SIZE*SIZE], output[SIZE*SIZE], golden[SIZE*SIZE];
+                                                      ^~~~~~
+../src/helloworld.c:96:74: note: previous definition of 'golden' was here
+ double sobel(unsigned char *input, unsigned char *output, unsigned char *golden)
+                                                                          ^~~~~~
+../src/helloworld.c:209:10: error: redefinition of 'sobel'
+   double sobel(unsigned char *input, unsigned char *output, unsigned char *golden)
+          ^~~~~
+../src/helloworld.c:96:8: note: previous definition of 'sobel' was here
+ double sobel(unsigned char *input, unsigned char *output, unsigned char *golden)
+        ^~~~~
+../src/helloworld.c:362:7: warning: 'main' is normally a non-static function [-Wmain]
+   int main(int argc, char* argv[])
+       ^~~~
+At top level:
+../src/helloworld.c:362:7: warning: 'main' defined but not used [-Wunused-function]
+../src/helloworld.c:81:24: warning: 'file3' defined but not used [-Wunused-variable]
+ static FIL file1,file2,file3;
+                        ^~~~~
+../src/helloworld.c:81:18: warning: 'file2' defined but not used [-Wunused-variable]
+ static FIL file1,file2,file3;
+                  ^~~~~
+../src/helloworld.c:81:12: warning: 'file1' defined but not used [-Wunused-variable]
+ static FIL file1,file2,file3;
+            ^~~~~
+../src/helloworld.c:79:14: warning: 'Log_File' defined but not used [-Wunused-variable]
+ static char *Log_File;
+              ^~~~~~~~
+../src/helloworld.c:78:13: warning: 'GOLDEN_FILE' defined but not used [-Wunused-variable]
+ static char GOLDEN_FILE[32] = "golden.gre";
+             ^~~~~~~~~~~
+../src/helloworld.c:77:13: warning: 'OUTPUT_FILE' defined but not used [-Wunused-variable]
+ static char OUTPUT_FILE[32] = "output.gre";
+             ^~~~~~~~~~~
+../src/helloworld.c:76:13: warning: 'INPUT_FILE' defined but not used [-Wunused-variable]
+ static char INPUT_FILE[32] = "input.gre";
+             ^~~~~~~~~~
+make: *** [src/helloworld.o] Error 1
+src/subdir.mk:36: recipe for target 'src/helloworld.o' failed
+11:08:30 **** Auto Build of configuration Debug for project LAB5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/init_sobel.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/init_sobel.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/init_sobel.d" -MT"src/init_sobel.o" -o "src/init_sobel.o" "../src/init_sobel.c"
+../src/init_sobel.c: In function 'init_sobel':
+../src/init_sobel.c:25:53: error: 'input' undeclared (first use in this function)
+      XSobel_sw_new_Set_input_r_r(&InstancePtr, (u32)input);
+                                                     ^~~~~
+../src/init_sobel.c:25:53: note: each undeclared identifier is reported only once for each function it appears in
+../src/init_sobel.c:26:54: error: 'output' undeclared (first use in this function)
+      XSobel_sw_new_Set_output_r_r(&InstancePtr, (u32)output);
+                                                      ^~~~~~
+../src/init_sobel.c:32:62: error: 'SIZE' undeclared (first use in this function)
+      XSobel_sw_new_Set_input_r_r(&InstancePtr1, (u32)(input+(SIZE*256)));
+                                                              ^~~~
+src/subdir.mk:36: recipe for target 'src/init_sobel.o' failed
+make: *** [src/init_sobel.o] Error 1
+11:09:06 **** Auto Build of configuration Debug for project LAB5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/init_sobel.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/init_sobel.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/init_sobel.d" -MT"src/init_sobel.o" -o "src/init_sobel.o" "../src/init_sobel.c"
+../src/init_sobel.c: In function 'init_sobel':
+../src/init_sobel.c:32:62: error: 'SIZE' undeclared (first use in this function)
+      XSobel_sw_new_Set_input_r_r(&InstancePtr1, (u32)(input+(SIZE*256)));
+                                                              ^~~~
+../src/init_sobel.c:32:62: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/init_sobel.o] Error 1
+src/subdir.mk:36: recipe for target 'src/init_sobel.o' failed
+11:09:11 **** Auto Build of configuration Debug for project LAB5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/init_sobel.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/init_sobel.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/init_sobel.d" -MT"src/init_sobel.o" -o "src/init_sobel.o" "../src/init_sobel.c"
+../src/init_sobel.c: In function 'init_sobel':
+../src/init_sobel.c:32:62: error: 'SIZE' undeclared (first use in this function)
+      XSobel_sw_new_Set_input_r_r(&InstancePtr1, (u32)(input+(SIZE*256)));
+                                                              ^~~~
+../src/init_sobel.c:32:62: note: each undeclared identifier is reported only once for each function it appears in
+src/subdir.mk:36: recipe for target 'src/init_sobel.o' failed
+make: *** [src/init_sobel.o] Error 1
+11:09:30 **** Auto Build of configuration Debug for project LAB5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/init_sobel.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/init_sobel.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/init_sobel.d" -MT"src/init_sobel.o" -o "src/init_sobel.o" "../src/init_sobel.c"
+../src/init_sobel.c: In function 'init_sobel':
+../src/init_sobel.c:33:62: error: 'SIZE' undeclared (first use in this function)
+      XSobel_sw_new_Set_input_r_r(&InstancePtr1, (u32)(input+(SIZE*256)));
+                                                              ^~~~
+../src/init_sobel.c:33:62: note: each undeclared identifier is reported only once for each function it appears in
+src/subdir.mk:36: recipe for target 'src/init_sobel.o' failed
+make: *** [src/init_sobel.o] Error 1
+11:09:49 **** Auto Build of configuration Debug for project LAB5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/init_sobel.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/init_sobel.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/init_sobel.d" -MT"src/init_sobel.o" -o "src/init_sobel.o" "../src/init_sobel.c"
+Finished building: ../src/init_sobel.c
+ 
+Building target: LAB5.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "LAB5.elf"  ./src/helloworld.o ./src/init_sobel.o ./src/platform.o ./src/xsobel_sw_new.o ./src/xsobel_sw_new_linux.o ./src/xsobel_sw_new_sinit.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: LAB5.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size LAB5.elf  |tee "LAB5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 105432	   2760	3172784	3280976	 321050	LAB5.elf
+Finished building: LAB5.elf.size
+ 
+11:10:43 **** Incremental Build of configuration Debug for project LAB5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+11:11:02 **** Incremental Build of configuration Debug for project LAB5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+11:12:48 **** Incremental Build of configuration Debug for project LAB5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+11:38:29 **** Incremental Build of configuration Debug for project LAB5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+11:39:11 **** Incremental Build of configuration Debug for project LAB5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+11:39:52 **** Incremental Build of configuration Debug for project LAB5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.

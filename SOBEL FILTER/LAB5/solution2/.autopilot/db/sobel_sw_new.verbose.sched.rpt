@@ -1,0 +1,1200 @@
+
+
+================================================================
+== Vivado HLS Report for 'sobel_sw_new'
+================================================================
+* Date:           Mon Jun 24 19:17:33 2019
+
+* Version:        2017.2 (Build 1909853 on Thu Jun 15 18:55:24 MDT 2017)
+* Project:        LAB5
+* Solution:       solution2
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      9.56|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +---------+---------+---------+---------+---------+
+    |      Latency      |      Interval     | Pipeline|
+    |   min   |   max   |   min   |   max   |   Type  |
+    +---------+---------+---------+---------+---------+
+    |  1052939|  1842187|  1052940|  1842188|   none  |
+    +---------+---------+---------+---------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------+---------+---------+-------------+-----------+-----------+------+----------+
+        |                     |      Latency      |  Iteration  |  Initiation Interval  | Trip |          |
+        |      Loop Name      |   min   |   max   |   Latency   |  achieved |   target  | Count| Pipelined|
+        +---------------------+---------+---------+-------------+-----------+-----------+------+----------+
+        |- memcpy..input      |     3073|     3073|            3|          1|          1|  3072|    yes   |
+        |- sobel_1_external   |  1049856|  1839104| 4101 ~ 7184 |          -|          -|   256|    no    |
+        | + move              |     2048|     2048|            2|          1|          1|  2048|    yes   |
+        | + memcpy..input     |     1025|     1025|            3|          1|          1|  1024|    yes   |
+        | + sobel_1_internal  |     4097|     4097|           14|          4|          1|  1022|    yes   |
+        +---------------------+---------+---------+-------------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 3
+  * Pipeline-1: initiation interval (II) = 1, depth = 2
+  * Pipeline-2: initiation interval (II) = 1, depth = 3
+  * Pipeline-3: initiation interval (II) = 4, depth = 14
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 42
+* Pipeline: 4
+  Pipeline-0: II = 1, D = 3, States = { 9 10 11 }
+  Pipeline-1: II = 1, D = 2, States = { 14 15 }
+  Pipeline-2: II = 1, D = 3, States = { 24 25 26 }
+  Pipeline-3: II = 4, D = 14, States = { 28 29 30 31 32 33 34 35 36 37 38 39 40 41 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	12  / (exitcond6)
+	10  / (!exitcond6)
+10 --> 
+	11  / true
+11 --> 
+	9  / true
+12 --> 
+	13  / true
+13 --> 
+	27  / (!exitcond2 & tmp_1)
+	14  / (!exitcond2 & !tmp_1)
+14 --> 
+	16  / (exitcond1)
+	15  / (!exitcond1)
+15 --> 
+	14  / true
+16 --> 
+	17  / true
+17 --> 
+	18  / true
+18 --> 
+	19  / true
+19 --> 
+	20  / true
+20 --> 
+	21  / true
+21 --> 
+	22  / true
+22 --> 
+	23  / true
+23 --> 
+	24  / true
+24 --> 
+	27  / (exitcond3)
+	25  / (!exitcond3)
+25 --> 
+	26  / true
+26 --> 
+	24  / true
+27 --> 
+	28  / true
+28 --> 
+	42  / (exitcond)
+	29  / (!exitcond)
+29 --> 
+	30  / true
+30 --> 
+	31  / true
+31 --> 
+	32  / true
+32 --> 
+	33  / true
+33 --> 
+	34  / true
+34 --> 
+	35  / true
+35 --> 
+	36  / true
+36 --> 
+	37  / true
+37 --> 
+	38  / true
+38 --> 
+	39  / true
+39 --> 
+	40  / true
+40 --> 
+	41  / true
+41 --> 
+	28  / true
+42 --> 
+	13  / true
+* FSM state operations: 
+
+ <State 1>: 1.00ns
+ST_1: output_read (5)  [1/1] 1.00ns
+:0  %output_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %output_r)
+
+ST_1: input_read (6)  [1/1] 1.00ns
+:1  %input_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %input_r)
+
+ST_1: small_input (14)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:65
+:9  %small_input = alloca [3072 x i8], align 16
+
+
+ <State 2>: 8.75ns
+ST_2: tmp_2 (8)  [1/1] 0.00ns
+:3  %tmp_2 = sext i32 %input_read to i64
+
+ST_2: INPUT_addr (10)  [1/1] 0.00ns
+:5  %INPUT_addr = getelementptr i8* %INPUT_r, i64 %tmp_2
+
+ST_2: INPUT_addr_rd_req (20)  [7/7] 8.75ns  loc: ../sobel_sw_new.c:72
+:15  %INPUT_addr_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.i8P(i8* %INPUT_addr, i32 3072)
+
+
+ <State 3>: 8.75ns
+ST_3: INPUT_addr_rd_req (20)  [6/7] 8.75ns  loc: ../sobel_sw_new.c:72
+:15  %INPUT_addr_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.i8P(i8* %INPUT_addr, i32 3072)
+
+
+ <State 4>: 8.75ns
+ST_4: INPUT_addr_rd_req (20)  [5/7] 8.75ns  loc: ../sobel_sw_new.c:72
+:15  %INPUT_addr_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.i8P(i8* %INPUT_addr, i32 3072)
+
+
+ <State 5>: 8.75ns
+ST_5: INPUT_addr_rd_req (20)  [4/7] 8.75ns  loc: ../sobel_sw_new.c:72
+:15  %INPUT_addr_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.i8P(i8* %INPUT_addr, i32 3072)
+
+
+ <State 6>: 8.75ns
+ST_6: INPUT_addr_rd_req (20)  [3/7] 8.75ns  loc: ../sobel_sw_new.c:72
+:15  %INPUT_addr_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.i8P(i8* %INPUT_addr, i32 3072)
+
+
+ <State 7>: 8.75ns
+ST_7: INPUT_addr_rd_req (20)  [2/7] 8.75ns  loc: ../sobel_sw_new.c:72
+:15  %INPUT_addr_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.i8P(i8* %INPUT_addr, i32 3072)
+
+
+ <State 8>: 8.75ns
+ST_8: tmp_20_cast (7)  [1/1] 0.00ns
+:2  %tmp_20_cast = sext i32 %output_read to i33
+
+ST_8: tmp_21_cast (9)  [1/1] 0.00ns
+:4  %tmp_21_cast = sext i32 %input_read to i33
+
+ST_8: StgValue_56 (11)  [1/1] 0.00ns
+:6  call void (...)* @_ssdm_op_SpecBitsMap(i8* %OUTPUT_r), !map !15
+
+ST_8: StgValue_57 (12)  [1/1] 0.00ns
+:7  call void (...)* @_ssdm_op_SpecBitsMap(i8* %INPUT_r), !map !21
+
+ST_8: StgValue_58 (13)  [1/1] 0.00ns
+:8  call void (...)* @_ssdm_op_SpecTopModule([13 x i8]* @sobel_sw_new_str) nounwind
+
+ST_8: StgValue_59 (15)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:57
+:10  call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [9 x i8]* @p_str2, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_8: StgValue_60 (16)  [1/1] 0.00ns
+:11  call void (...)* @_ssdm_op_SpecInterface(i8* %INPUT_r, [6 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 133120, [6 x i8]* @p_str4, [6 x i8]* @p_str5, [1 x i8]* @p_str1, i32 16, i32 16, i32 16, i32 16, [1 x i8]* @p_str1, [1 x i8]* @p_str1)
+
+ST_8: StgValue_61 (17)  [1/1] 0.00ns
+:12  call void (...)* @_ssdm_op_SpecInterface(i32 %input_r, [10 x i8]* @mode, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 133120, [1 x i8]* @bundle, [6 x i8]* @p_str5, [1 x i8]* @p_str1, i32 16, i32 16, i32 16, i32 16, [1 x i8]* @p_str1, [1 x i8]* @p_str1)
+
+ST_8: StgValue_62 (18)  [1/1] 0.00ns
+:13  call void (...)* @_ssdm_op_SpecInterface(i8* %OUTPUT_r, [6 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 133120, [7 x i8]* @p_str6, [6 x i8]* @p_str5, [1 x i8]* @p_str1, i32 16, i32 16, i32 16, i32 16, [1 x i8]* @p_str1, [1 x i8]* @p_str1)
+
+ST_8: StgValue_63 (19)  [1/1] 0.00ns
+:14  call void (...)* @_ssdm_op_SpecInterface(i32 %output_r, [10 x i8]* @mode3, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 133120, [1 x i8]* @bundle4, [6 x i8]* @p_str5, [1 x i8]* @p_str1, i32 16, i32 16, i32 16, i32 16, [1 x i8]* @p_str1, [1 x i8]* @p_str1)
+
+ST_8: INPUT_addr_rd_req (20)  [1/7] 8.75ns  loc: ../sobel_sw_new.c:72
+:15  %INPUT_addr_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.i8P(i8* %INPUT_addr, i32 3072)
+
+ST_8: StgValue_65 (21)  [1/1] 1.59ns
+:16  br label %burst.rd.header
+
+
+ <State 9>: 2.94ns
+ST_9: indvar (23)  [1/1] 0.00ns
+burst.rd.header:0  %indvar = phi i12 [ 0, %0 ], [ %indvar_next, %burst.rd.body ]
+
+ST_9: exitcond6 (24)  [1/1] 2.94ns
+burst.rd.header:1  %exitcond6 = icmp eq i12 %indvar, -1024
+
+ST_9: indvar_next (25)  [1/1] 2.33ns
+burst.rd.header:2  %indvar_next = add i12 %indvar, 1
+
+ST_9: StgValue_69 (26)  [1/1] 0.00ns
+burst.rd.header:3  br i1 %exitcond6, label %burst.rd.end.preheader, label %burst.rd.body
+
+
+ <State 10>: 8.75ns
+ST_10: INPUT_addr_read (33)  [1/1] 8.75ns  loc: ../sobel_sw_new.c:72
+burst.rd.body:5  %INPUT_addr_read = call i8 @_ssdm_op_Read.m_axi.i8P(i8* %INPUT_addr)
+
+
+ <State 11>: 3.25ns
+ST_11: empty (28)  [1/1] 0.00ns
+burst.rd.body:0  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3072, i64 3072, i64 3072) nounwind
+
+ST_11: burstread_rbegin (29)  [1/1] 0.00ns
+burst.rd.body:1  %burstread_rbegin = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @burstread_OC_region_s) nounwind
+
+ST_11: StgValue_73 (30)  [1/1] 0.00ns
+burst.rd.body:2  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str10)
+
+ST_11: StgValue_74 (31)  [1/1] 0.00ns
+burst.rd.body:3  call void (...)* @_ssdm_op_SpecLoopName([14 x i8]* @memcpy_OC_OC_input_s)
+
+ST_11: tmp (32)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:72
+burst.rd.body:4  %tmp = zext i12 %indvar to i64
+
+ST_11: small_input_addr (34)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:72
+burst.rd.body:6  %small_input_addr = getelementptr [3072 x i8]* %small_input, i64 0, i64 %tmp
+
+ST_11: StgValue_77 (35)  [1/1] 3.25ns  loc: ../sobel_sw_new.c:72
+burst.rd.body:7  store i8 %INPUT_addr_read, i8* %small_input_addr, align 1
+
+ST_11: burstread_rend (36)  [1/1] 0.00ns
+burst.rd.body:8  %burstread_rend = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @burstread_OC_region_s, i32 %burstread_rbegin) nounwind
+
+ST_11: StgValue_79 (37)  [1/1] 0.00ns
+burst.rd.body:9  br label %burst.rd.header
+
+
+ <State 12>: 1.59ns
+ST_12: position (39)  [1/1] 0.00ns
+burst.rd.end.preheader:0  %position = alloca i32
+
+ST_12: StgValue_81 (40)  [1/1] 1.59ns
+burst.rd.end.preheader:1  store i32 3, i32* %position
+
+ST_12: StgValue_82 (41)  [1/1] 1.59ns  loc: ../sobel_sw_new.c:74
+burst.rd.end.preheader:2  br label %burst.rd.end
+
+
+ <State 13>: 7.16ns
+ST_13: i (43)  [1/1] 0.00ns
+burst.rd.end:0  %i = phi i9 [ %i_1, %9 ], [ 1, %burst.rd.end.preheader ]
+
+ST_13: exitcond2 (44)  [1/1] 3.02ns  loc: ../sobel_sw_new.c:74
+burst.rd.end:1  %exitcond2 = icmp eq i9 %i, -255
+
+ST_13: StgValue_85 (45)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:74
+burst.rd.end:2  br i1 %exitcond2, label %10, label %1
+
+ST_13: empty_5 (47)  [1/1] 0.00ns
+:0  %empty_5 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 256, i64 256, i64 256) nounwind
+
+ST_13: StgValue_87 (48)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:74
+:1  call void (...)* @_ssdm_op_SpecLoopName([17 x i8]* @p_str7) nounwind
+
+ST_13: tmp_s (49)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:74
+:2  %tmp_s = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @p_str7) nounwind
+
+ST_13: tmp_1 (50)  [1/1] 3.02ns  loc: ../sobel_sw_new.c:75
+:3  %tmp_1 = icmp eq i9 %i, 1
+
+ST_13: StgValue_90 (51)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:75
+:4  br i1 %tmp_1, label %._crit_edge, label %.preheader.preheader
+
+ST_13: StgValue_91 (53)  [1/1] 1.59ns  loc: ../sobel_sw_new.c:76
+.preheader.preheader:0  br label %.preheader
+
+ST_13: StgValue_92 (219)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:94
+:0  ret void
+
+
+ <State 14>: 5.58ns
+ST_14: k (55)  [1/1] 0.00ns
+.preheader:0  %k = phi i12 [ %k_1, %2 ], [ 0, %.preheader.preheader ]
+
+ST_14: exitcond1 (56)  [1/1] 2.94ns  loc: ../sobel_sw_new.c:76
+.preheader:1  %exitcond1 = icmp eq i12 %k, -2048
+
+ST_14: k_1 (57)  [1/1] 2.33ns  loc: ../sobel_sw_new.c:76
+.preheader:2  %k_1 = add i12 %k, 1
+
+ST_14: StgValue_96 (58)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:76
+.preheader:3  br i1 %exitcond1, label %3, label %2
+
+ST_14: tmp_4 (64)  [1/1] 2.33ns  loc: ../sobel_sw_new.c:77
+:4  %tmp_4 = add i12 %k, 1024
+
+ST_14: tmp_5 (65)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:77
+:5  %tmp_5 = zext i12 %tmp_4 to i64
+
+ST_14: small_input_addr_1 (66)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:77
+:6  %small_input_addr_1 = getelementptr inbounds [3072 x i8]* %small_input, i64 0, i64 %tmp_5
+
+ST_14: small_input_load (67)  [2/2] 3.25ns  loc: ../sobel_sw_new.c:77
+:7  %small_input_load = load i8* %small_input_addr_1, align 1
+
+
+ <State 15>: 6.51ns
+ST_15: empty_6 (60)  [1/1] 0.00ns
+:0  %empty_6 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 2048, i64 2048, i64 2048) nounwind
+
+ST_15: StgValue_102 (61)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:76
+:1  call void (...)* @_ssdm_op_SpecLoopName([5 x i8]* @p_str8) nounwind
+
+ST_15: tmp_8 (62)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:76
+:2  %tmp_8 = call i32 (...)* @_ssdm_op_SpecRegionBegin([5 x i8]* @p_str8) nounwind
+
+ST_15: StgValue_104 (63)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:77
+:3  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
+
+ST_15: small_input_load (67)  [1/2] 3.25ns  loc: ../sobel_sw_new.c:77
+:7  %small_input_load = load i8* %small_input_addr_1, align 1
+
+ST_15: tmp_6 (68)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:77
+:8  %tmp_6 = zext i12 %k to i64
+
+ST_15: small_input_addr_2 (69)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:77
+:9  %small_input_addr_2 = getelementptr inbounds [3072 x i8]* %small_input, i64 0, i64 %tmp_6
+
+ST_15: StgValue_108 (70)  [1/1] 3.25ns  loc: ../sobel_sw_new.c:77
+:10  store i8 %small_input_load, i8* %small_input_addr_2, align 1
+
+ST_15: empty_7 (71)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:78
+:11  %empty_7 = call i32 (...)* @_ssdm_op_SpecRegionEnd([5 x i8]* @p_str8, i32 %tmp_8) nounwind
+
+ST_15: StgValue_110 (72)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:76
+:12  br label %.preheader
+
+
+ <State 16>: 2.90ns
+ST_16: position_load_1 (74)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:79
+:0  %position_load_1 = load i32* %position
+
+ST_16: tmp_3 (75)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:79 (grouped into LUT with out node input2_sum5)
+:1  %tmp_3 = shl i32 %position_load_1, 10
+
+ST_16: tmp_3_cast (76)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:79 (grouped into LUT with out node input2_sum5)
+:2  %tmp_3_cast = sext i32 %tmp_3 to i33
+
+ST_16: input2_sum5 (77)  [1/1] 2.90ns  loc: ../sobel_sw_new.c:79 (out node of the LUT)
+:3  %input2_sum5 = add i33 %tmp_21_cast, %tmp_3_cast
+
+ST_16: input2_sum5_cast (78)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:79
+:4  %input2_sum5_cast = sext i33 %input2_sum5 to i64
+
+ST_16: INPUT_addr_1 (79)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:79
+:5  %INPUT_addr_1 = getelementptr i8* %INPUT_r, i64 %input2_sum5_cast
+
+
+ <State 17>: 8.75ns
+ST_17: INPUT_addr_2_rd_req (80)  [7/7] 8.75ns  loc: ../sobel_sw_new.c:79
+:6  %INPUT_addr_2_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.i8P(i8* %INPUT_addr_1, i32 1024)
+
+
+ <State 18>: 8.75ns
+ST_18: INPUT_addr_2_rd_req (80)  [6/7] 8.75ns  loc: ../sobel_sw_new.c:79
+:6  %INPUT_addr_2_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.i8P(i8* %INPUT_addr_1, i32 1024)
+
+
+ <State 19>: 8.75ns
+ST_19: INPUT_addr_2_rd_req (80)  [5/7] 8.75ns  loc: ../sobel_sw_new.c:79
+:6  %INPUT_addr_2_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.i8P(i8* %INPUT_addr_1, i32 1024)
+
+
+ <State 20>: 8.75ns
+ST_20: INPUT_addr_2_rd_req (80)  [4/7] 8.75ns  loc: ../sobel_sw_new.c:79
+:6  %INPUT_addr_2_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.i8P(i8* %INPUT_addr_1, i32 1024)
+
+
+ <State 21>: 8.75ns
+ST_21: INPUT_addr_2_rd_req (80)  [3/7] 8.75ns  loc: ../sobel_sw_new.c:79
+:6  %INPUT_addr_2_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.i8P(i8* %INPUT_addr_1, i32 1024)
+
+
+ <State 22>: 8.75ns
+ST_22: INPUT_addr_2_rd_req (80)  [2/7] 8.75ns  loc: ../sobel_sw_new.c:79
+:6  %INPUT_addr_2_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.i8P(i8* %INPUT_addr_1, i32 1024)
+
+
+ <State 23>: 8.75ns
+ST_23: INPUT_addr_2_rd_req (80)  [1/7] 8.75ns  loc: ../sobel_sw_new.c:79
+:6  %INPUT_addr_2_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.i8P(i8* %INPUT_addr_1, i32 1024)
+
+ST_23: StgValue_124 (81)  [1/1] 1.59ns
+:7  br label %burst.rd.header12
+
+
+ <State 24>: 5.01ns
+ST_24: indvar1 (83)  [1/1] 0.00ns
+burst.rd.header12:0  %indvar1 = phi i11 [ 0, %3 ], [ %indvar_next1, %burst.rd.body13 ]
+
+ST_24: exitcond3 (84)  [1/1] 2.94ns
+burst.rd.header12:1  %exitcond3 = icmp eq i11 %indvar1, -1024
+
+ST_24: indvar_next1 (85)  [1/1] 2.33ns
+burst.rd.header12:2  %indvar_next1 = add i11 %indvar1, 1
+
+ST_24: StgValue_128 (86)  [1/1] 0.00ns
+burst.rd.header12:3  br i1 %exitcond3, label %burst.rd.end11, label %burst.rd.body13
+
+ST_24: tmp_9 (93)  [1/1] 0.00ns
+burst.rd.body13:5  %tmp_9 = call i12 @_ssdm_op_BitConcatenate.i12.i1.i11(i1 true, i11 %indvar1)
+
+
+ <State 25>: 8.75ns
+ST_25: INPUT_addr_1_read (92)  [1/1] 8.75ns  loc: ../sobel_sw_new.c:79
+burst.rd.body13:4  %INPUT_addr_1_read = call i8 @_ssdm_op_Read.m_axi.i8P(i8* %INPUT_addr_1)
+
+
+ <State 26>: 3.25ns
+ST_26: empty_8 (88)  [1/1] 0.00ns
+burst.rd.body13:0  %empty_8 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1024, i64 1024, i64 1024) nounwind
+
+ST_26: burstread_rbegin1 (89)  [1/1] 0.00ns
+burst.rd.body13:1  %burstread_rbegin1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @burstread_OC_region_s) nounwind
+
+ST_26: StgValue_133 (90)  [1/1] 0.00ns
+burst.rd.body13:2  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str11)
+
+ST_26: StgValue_134 (91)  [1/1] 0.00ns
+burst.rd.body13:3  call void (...)* @_ssdm_op_SpecLoopName([14 x i8]* @memcpy_OC_OC_input_s)
+
+ST_26: tmp_7 (94)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:79
+burst.rd.body13:6  %tmp_7 = zext i12 %tmp_9 to i64
+
+ST_26: small_input_addr_3 (95)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:79
+burst.rd.body13:7  %small_input_addr_3 = getelementptr [3072 x i8]* %small_input, i64 0, i64 %tmp_7
+
+ST_26: StgValue_137 (96)  [1/1] 3.25ns  loc: ../sobel_sw_new.c:79
+burst.rd.body13:8  store i8 %INPUT_addr_1_read, i8* %small_input_addr_3, align 1
+
+ST_26: burstread_rend25 (97)  [1/1] 0.00ns
+burst.rd.body13:9  %burstread_rend25 = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @burstread_OC_region_s, i32 %burstread_rbegin1) nounwind
+
+ST_26: StgValue_139 (98)  [1/1] 0.00ns
+burst.rd.body13:10  br label %burst.rd.header12
+
+
+ <State 27>: 4.49ns
+ST_27: position_load (100)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:80
+burst.rd.end11:0  %position_load = load i32* %position
+
+ST_27: position_1 (101)  [1/1] 2.90ns  loc: ../sobel_sw_new.c:80
+burst.rd.end11:1  %position_1 = add nsw i32 %position_load, 1
+
+ST_27: StgValue_142 (102)  [1/1] 1.59ns  loc: ../sobel_sw_new.c:80
+burst.rd.end11:2  store i32 %position_1, i32* %position
+
+ST_27: StgValue_143 (103)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:81
+burst.rd.end11:3  br label %._crit_edge
+
+ST_27: StgValue_144 (105)  [1/1] 1.59ns  loc: ../sobel_sw_new.c:82
+._crit_edge:0  br label %4
+
+
+ <State 28>: 5.58ns
+ST_28: posx_assign (107)  [1/1] 0.00ns
+:0  %posx_assign = phi i10 [ 1, %._crit_edge ], [ %j, %8 ]
+
+ST_28: exitcond (108)  [1/1] 3.02ns  loc: ../sobel_sw_new.c:82
+:1  %exitcond = icmp eq i10 %posx_assign, -1
+
+ST_28: StgValue_147 (109)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:82
+:2  br i1 %exitcond, label %9, label %5
+
+ST_28: posx_assign_cast8 (111)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:82
+:0  %posx_assign_cast8 = zext i10 %posx_assign to i12
+
+ST_28: j (117)  [1/1] 2.32ns  loc: ../sobel_sw_new.c:41->../sobel_sw_new.c:85
+:6  %j = add i10 1, %posx_assign
+
+ST_28: tmp_i (118)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:41->../sobel_sw_new.c:85
+:7  %tmp_i = zext i10 %j to i64
+
+ST_28: small_input_addr_4 (119)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:41->../sobel_sw_new.c:85
+:8  %small_input_addr_4 = getelementptr [3072 x i8]* %small_input, i64 0, i64 %tmp_i
+
+ST_28: small_input_load_1 (120)  [2/2] 3.25ns  loc: ../sobel_sw_new.c:41->../sobel_sw_new.c:85
+:9  %small_input_load_1 = load i8* %small_input_addr_4, align 1
+
+ST_28: tmp_38_i (128)  [1/1] 2.33ns  loc: ../sobel_sw_new.c:43->../sobel_sw_new.c:85
+:17  %tmp_38_i = add i12 -2047, %posx_assign_cast8
+
+ST_28: tmp_39_i (129)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:43->../sobel_sw_new.c:85
+:18  %tmp_39_i = zext i12 %tmp_38_i to i64
+
+ST_28: small_input_addr_6 (130)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:43->../sobel_sw_new.c:85
+:19  %small_input_addr_6 = getelementptr [3072 x i8]* %small_input, i64 0, i64 %tmp_39_i
+
+ST_28: small_input_load_3 (131)  [2/2] 3.25ns  loc: ../sobel_sw_new.c:43->../sobel_sw_new.c:85
+:20  %small_input_load_3 = load i8* %small_input_addr_6, align 1
+
+
+ <State 29>: 5.58ns
+ST_29: posx_assign_cast (112)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:82
+:1  %posx_assign_cast = zext i10 %posx_assign to i11
+
+ST_29: small_input_load_1 (120)  [1/2] 3.25ns  loc: ../sobel_sw_new.c:41->../sobel_sw_new.c:85
+:9  %small_input_load_1 = load i8* %small_input_addr_4, align 1
+
+ST_29: tmp_34_i (122)  [1/1] 2.33ns  loc: ../sobel_sw_new.c:42->../sobel_sw_new.c:85
+:11  %tmp_34_i = add i11 -1023, %posx_assign_cast
+
+ST_29: tmp_35_i (123)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:42->../sobel_sw_new.c:85
+:12  %tmp_35_i = zext i11 %tmp_34_i to i64
+
+ST_29: small_input_addr_5 (124)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:42->../sobel_sw_new.c:85
+:13  %small_input_addr_5 = getelementptr [3072 x i8]* %small_input, i64 0, i64 %tmp_35_i
+
+ST_29: small_input_load_2 (125)  [2/2] 3.25ns  loc: ../sobel_sw_new.c:42->../sobel_sw_new.c:85
+:14  %small_input_load_2 = load i8* %small_input_addr_5, align 1
+
+ST_29: small_input_load_3 (131)  [1/2] 3.25ns  loc: ../sobel_sw_new.c:43->../sobel_sw_new.c:85
+:20  %small_input_load_3 = load i8* %small_input_addr_6, align 1
+
+ST_29: tmp_41_i (134)  [1/1] 2.32ns  loc: ../sobel_sw_new.c:44->../sobel_sw_new.c:85
+:23  %tmp_41_i = add i10 -1, %posx_assign
+
+ST_29: tmp_42_i (135)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:44->../sobel_sw_new.c:85
+:24  %tmp_42_i = zext i10 %tmp_41_i to i64
+
+ST_29: small_input_addr_7 (136)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:44->../sobel_sw_new.c:85
+:25  %small_input_addr_7 = getelementptr [3072 x i8]* %small_input, i64 0, i64 %tmp_42_i
+
+ST_29: small_input_load_4 (137)  [2/2] 3.25ns  loc: ../sobel_sw_new.c:44->../sobel_sw_new.c:85
+:26  %small_input_load_4 = load i8* %small_input_addr_7, align 1
+
+
+ <State 30>: 7.90ns
+ST_30: res_cast (121)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:41->../sobel_sw_new.c:85
+:10  %res_cast = zext i8 %small_input_load_1 to i9
+
+ST_30: small_input_load_2 (125)  [1/2] 3.25ns  loc: ../sobel_sw_new.c:42->../sobel_sw_new.c:85
+:14  %small_input_load_2 = load i8* %small_input_addr_5, align 1
+
+ST_30: tmp_37_i (126)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:42->../sobel_sw_new.c:85
+:15  %tmp_37_i = call i9 @_ssdm_op_BitConcatenate.i9.i8.i1(i8 %small_input_load_2, i1 false)
+
+ST_30: tmp_37_i_cast (127)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:42->../sobel_sw_new.c:85
+:16  %tmp_37_i_cast = zext i9 %tmp_37_i to i10
+
+ST_30: tmp_40_i_cast6 (132)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:44->../sobel_sw_new.c:85
+:21  %tmp_40_i_cast6 = zext i8 %small_input_load_3 to i9
+
+ST_30: small_input_load_4 (137)  [1/2] 3.25ns  loc: ../sobel_sw_new.c:44->../sobel_sw_new.c:85
+:26  %small_input_load_4 = load i8* %small_input_addr_7, align 1
+
+ST_30: res_2_cast5 (138)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:45->../sobel_sw_new.c:85
+:27  %res_2_cast5 = zext i8 %small_input_load_4 to i9
+
+ST_30: res_2_cast (139)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:45->../sobel_sw_new.c:85
+:28  %res_2_cast = zext i8 %small_input_load_4 to i11
+
+ST_30: tmp_44_i (140)  [1/1] 2.33ns  loc: ../sobel_sw_new.c:45->../sobel_sw_new.c:85
+:29  %tmp_44_i = add i11 1023, %posx_assign_cast
+
+ST_30: tmp_45_i (141)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:45->../sobel_sw_new.c:85
+:30  %tmp_45_i = zext i11 %tmp_44_i to i64
+
+ST_30: small_input_addr_8 (142)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:45->../sobel_sw_new.c:85
+:31  %small_input_addr_8 = getelementptr [3072 x i8]* %small_input, i64 0, i64 %tmp_45_i
+
+ST_30: small_input_load_5 (143)  [2/2] 3.25ns  loc: ../sobel_sw_new.c:45->../sobel_sw_new.c:85
+:32  %small_input_load_5 = load i8* %small_input_addr_8, align 1
+
+ST_30: tmp_48_i (146)  [1/1] 2.33ns  loc: ../sobel_sw_new.c:46->../sobel_sw_new.c:85
+:35  %tmp_48_i = add i12 2047, %posx_assign_cast8
+
+ST_30: tmp_49_i (147)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:46->../sobel_sw_new.c:85
+:36  %tmp_49_i = zext i12 %tmp_48_i to i64
+
+ST_30: small_input_addr_9 (148)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:46->../sobel_sw_new.c:85
+:37  %small_input_addr_9 = getelementptr [3072 x i8]* %small_input, i64 0, i64 %tmp_49_i
+
+ST_30: small_input_load_6 (149)  [2/2] 3.25ns  loc: ../sobel_sw_new.c:46->../sobel_sw_new.c:85
+:38  %small_input_load_6 = load i8* %small_input_addr_9, align 1
+
+ST_30: tmp1 (151)  [1/1] 2.32ns  loc: ../sobel_sw_new.c:43->../sobel_sw_new.c:85
+:40  %tmp1 = add i9 %res_cast, %tmp_40_i_cast6
+
+ST_30: tmp1_cast (152)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:43->../sobel_sw_new.c:85
+:41  %tmp1_cast = zext i9 %tmp1 to i10
+
+ST_30: res_7_i (153)  [1/1] 2.32ns  loc: ../sobel_sw_new.c:43->../sobel_sw_new.c:85
+:42  %res_7_i = add i10 %tmp1_cast, %tmp_37_i_cast
+
+ST_30: res_7_i_cast (154)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:43->../sobel_sw_new.c:85
+:43  %res_7_i_cast = zext i10 %res_7_i to i11
+
+ST_30: res_8_i (155)  [1/1] 2.32ns  loc: ../sobel_sw_new.c:44->../sobel_sw_new.c:85
+:44  %res_8_i = sub i11 %res_7_i_cast, %res_2_cast
+
+ST_30: tmp2 (173)  [1/1] 2.32ns  loc: ../sobel_sw_new.c:23->../sobel_sw_new.c:85
+:62  %tmp2 = add i9 %res_2_cast5, %res_cast
+
+
+ <State 31>: 7.01ns
+ST_31: small_input_load_5 (143)  [1/2] 3.25ns  loc: ../sobel_sw_new.c:45->../sobel_sw_new.c:85
+:32  %small_input_load_5 = load i8* %small_input_addr_8, align 1
+
+ST_31: tmp_47_i (144)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:45->../sobel_sw_new.c:85
+:33  %tmp_47_i = call i9 @_ssdm_op_BitConcatenate.i9.i8.i1(i8 %small_input_load_5, i1 false)
+
+ST_31: tmp_47_i_cast (145)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:45->../sobel_sw_new.c:85
+:34  %tmp_47_i_cast = zext i9 %tmp_47_i to i11
+
+ST_31: small_input_load_6 (149)  [1/2] 3.25ns  loc: ../sobel_sw_new.c:46->../sobel_sw_new.c:85
+:38  %small_input_load_6 = load i8* %small_input_addr_9, align 1
+
+ST_31: tmp_50_i_cast (150)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:43->../sobel_sw_new.c:85
+:39  %tmp_50_i_cast = zext i8 %small_input_load_6 to i11
+
+ST_31: res_9_i (156)  [1/1] 1.88ns  loc: ../sobel_sw_new.c:45->../sobel_sw_new.c:85
+:45  %res_9_i = sub i11 %res_8_i, %tmp_47_i_cast
+
+ST_31: res (157)  [1/1] 1.88ns  loc: ../sobel_sw_new.c:46->../sobel_sw_new.c:85
+:46  %res = sub i11 %res_9_i, %tmp_50_i_cast
+
+ST_31: tmp_18_i (162)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:22->../sobel_sw_new.c:85
+:51  %tmp_18_i = zext i10 %posx_assign to i64
+
+ST_31: small_input_addr_10 (163)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:22->../sobel_sw_new.c:85
+:52  %small_input_addr_10 = getelementptr [3072 x i8]* %small_input, i64 0, i64 %tmp_18_i
+
+ST_31: small_input_load_7 (164)  [2/2] 3.25ns  loc: ../sobel_sw_new.c:22->../sobel_sw_new.c:85
+:53  %small_input_load_7 = load i8* %small_input_addr_10, align 1
+
+ST_31: tmp_27_i (167)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:25->../sobel_sw_new.c:85
+:56  %tmp_27_i = call i12 @_ssdm_op_BitConcatenate.i12.i2.i10(i2 -2, i10 %posx_assign)
+
+ST_31: tmp_28_i (168)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:25->../sobel_sw_new.c:85
+:57  %tmp_28_i = zext i12 %tmp_27_i to i64
+
+ST_31: small_input_addr_11 (169)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:25->../sobel_sw_new.c:85
+:58  %small_input_addr_11 = getelementptr [3072 x i8]* %small_input, i64 0, i64 %tmp_28_i
+
+ST_31: small_input_load_8 (170)  [2/2] 3.25ns  loc: ../sobel_sw_new.c:25->../sobel_sw_new.c:85
+:59  %small_input_load_8 = load i8* %small_input_addr_11, align 1
+
+
+ <State 32>: 7.90ns
+ST_32: small_input_load_7 (164)  [1/2] 3.25ns  loc: ../sobel_sw_new.c:22->../sobel_sw_new.c:85
+:53  %small_input_load_7 = load i8* %small_input_addr_10, align 1
+
+ST_32: tmp_20_i (165)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:22->../sobel_sw_new.c:85
+:54  %tmp_20_i = call i9 @_ssdm_op_BitConcatenate.i9.i8.i1(i8 %small_input_load_7, i1 false)
+
+ST_32: tmp_20_i_cast (166)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:22->../sobel_sw_new.c:85
+:55  %tmp_20_i_cast = zext i9 %tmp_20_i to i10
+
+ST_32: small_input_load_8 (170)  [1/2] 3.25ns  loc: ../sobel_sw_new.c:25->../sobel_sw_new.c:85
+:59  %small_input_load_8 = load i8* %small_input_addr_11, align 1
+
+ST_32: tmp2_cast (174)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:23->../sobel_sw_new.c:85
+:63  %tmp2_cast = zext i9 %tmp2 to i10
+
+ST_32: res_2_i (175)  [1/1] 2.32ns  loc: ../sobel_sw_new.c:23->../sobel_sw_new.c:85
+:64  %res_2_i = add i10 %tmp2_cast, %tmp_20_i_cast
+
+ST_32: res_2_i_cast (176)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:23->../sobel_sw_new.c:85
+:65  %res_2_i_cast = zext i10 %res_2_i to i11
+
+ST_32: res_3_i (177)  [1/1] 2.32ns  loc: ../sobel_sw_new.c:24->../sobel_sw_new.c:85
+:66  %res_3_i = sub i11 %res_2_i_cast, %tmp_50_i_cast
+
+
+ <State 33>: 6.69ns
+ST_33: tmp_40_i_cast (133)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:44->../sobel_sw_new.c:85
+:22  %tmp_40_i_cast = zext i8 %small_input_load_3 to i11
+
+ST_33: neg (158)  [1/1] 2.33ns  loc: ../sobel_sw_new.c:46->../sobel_sw_new.c:85
+:47  %neg = sub i11 0, %res
+
+ST_33: abscond (159)  [1/1] 2.94ns  loc: ../sobel_sw_new.c:46->../sobel_sw_new.c:85
+:48  %abscond = icmp sgt i11 %res, 0
+
+ST_33: abs (160)  [1/1] 2.07ns  loc: ../sobel_sw_new.c:46->../sobel_sw_new.c:85
+:49  %abs = select i1 %abscond, i11 %res, i11 %neg
+
+ST_33: tmp_30_i (171)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:25->../sobel_sw_new.c:85
+:60  %tmp_30_i = call i9 @_ssdm_op_BitConcatenate.i9.i8.i1(i8 %small_input_load_8, i1 false)
+
+ST_33: tmp_30_i_cast (172)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:25->../sobel_sw_new.c:85
+:61  %tmp_30_i_cast = zext i9 %tmp_30_i to i11
+
+ST_33: res_4_i (178)  [1/1] 1.88ns  loc: ../sobel_sw_new.c:25->../sobel_sw_new.c:85
+:67  %res_4_i = sub i11 %res_3_i, %tmp_30_i_cast
+
+ST_33: res_1 (179)  [1/1] 1.88ns  loc: ../sobel_sw_new.c:26->../sobel_sw_new.c:85
+:68  %res_1 = sub i11 %res_4_i, %tmp_40_i_cast
+
+ST_33: neg3 (180)  [1/1] 2.33ns  loc: ../sobel_sw_new.c:26->../sobel_sw_new.c:85
+:69  %neg3 = sub i11 0, %res_1
+
+ST_33: abscond4 (181)  [1/1] 2.94ns  loc: ../sobel_sw_new.c:26->../sobel_sw_new.c:85
+:70  %abscond4 = icmp sgt i11 %res_1, 0
+
+ST_33: tmp_11 (184)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:46->../sobel_sw_new.c:85
+:73  %tmp_11 = trunc i11 %abs to i8
+
+
+ <State 34>: 9.56ns
+ST_34: abs_cast4 (161)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:46->../sobel_sw_new.c:85
+:50  %abs_cast4 = sext i11 %abs to i12
+
+ST_34: abs5 (182)  [1/1] 2.07ns  loc: ../sobel_sw_new.c:26->../sobel_sw_new.c:85
+:71  %abs5 = select i1 %abscond4, i11 %res_1, i11 %neg3
+
+ST_34: abs5_cast3 (183)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:26->../sobel_sw_new.c:85
+:72  %abs5_cast3 = sext i11 %abs5 to i12
+
+ST_34: tmp_12 (185)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:26->../sobel_sw_new.c:85
+:74  %tmp_12 = trunc i11 %abs5 to i8
+
+ST_34: p (186)  [1/1] 2.33ns  loc: ../sobel_sw_new.c:85
+:75  %p = add i12 %abs_cast4, %abs5_cast3
+
+ST_34: tmp_14 (187)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:86
+:76  %tmp_14 = call i4 @_ssdm_op_PartSelect.i4.i12.i32.i32(i12 %p, i32 8, i32 11)
+
+ST_34: icmp (188)  [1/1] 3.10ns  loc: ../sobel_sw_new.c:86
+:77  %icmp = icmp eq i4 %tmp_14, 0
+
+ST_34: StgValue_230 (189)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:86
+:78  br i1 %icmp, label %7, label %6
+
+ST_34: tmp_13 (191)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:87
+:0  %tmp_13 = call i19 @_ssdm_op_BitConcatenate.i19.i9.i10(i9 %i, i10 %posx_assign)
+
+ST_34: tmp_14_cast (192)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:87
+:1  %tmp_14_cast = zext i19 %tmp_13 to i33
+
+ST_34: output4_sum7 (193)  [1/1] 2.90ns  loc: ../sobel_sw_new.c:87
+:2  %output4_sum7 = add i33 %tmp_14_cast, %tmp_20_cast
+
+ST_34: output4_sum7_cast (194)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:87
+:3  %output4_sum7_cast = sext i33 %output4_sum7 to i64
+
+ST_34: OUTPUT_addr (195)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:87
+:4  %OUTPUT_addr = getelementptr i8* %OUTPUT_r, i64 %output4_sum7_cast
+
+ST_34: tmp_15 (201)  [1/1] 2.32ns  loc: ../sobel_sw_new.c:90
+:0  %tmp_15 = add i8 %tmp_12, %tmp_11
+
+ST_34: tmp_16 (202)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:90
+:1  %tmp_16 = call i19 @_ssdm_op_BitConcatenate.i19.i9.i10(i9 %i, i10 %posx_assign)
+
+ST_34: tmp_17_cast (203)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:90
+:2  %tmp_17_cast = zext i19 %tmp_16 to i33
+
+ST_34: output4_sum (204)  [1/1] 2.90ns  loc: ../sobel_sw_new.c:90
+:3  %output4_sum = add i33 %tmp_17_cast, %tmp_20_cast
+
+ST_34: output4_sum_cast (205)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:90
+:4  %output4_sum_cast = sext i33 %output4_sum to i64
+
+ST_34: OUTPUT_addr_1 (206)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:90
+:5  %OUTPUT_addr_1 = getelementptr i8* %OUTPUT_r, i64 %output4_sum_cast
+
+
+ <State 35>: 8.75ns
+ST_35: OUTPUT_addr_req (196)  [1/1] 8.75ns  loc: ../sobel_sw_new.c:87
+:5  %OUTPUT_addr_req = call i1 @_ssdm_op_WriteReq.m_axi.i8P(i8* %OUTPUT_addr, i32 1)
+
+ST_35: OUTPUT_addr_1_req (207)  [1/1] 8.75ns  loc: ../sobel_sw_new.c:90
+:6  %OUTPUT_addr_1_req = call i1 @_ssdm_op_WriteReq.m_axi.i8P(i8* %OUTPUT_addr_1, i32 1)
+
+
+ <State 36>: 8.75ns
+ST_36: StgValue_244 (197)  [1/1] 8.75ns  loc: ../sobel_sw_new.c:87
+:6  call void @_ssdm_op_Write.m_axi.i8P(i8* %OUTPUT_addr, i8 -1, i1 true)
+
+ST_36: StgValue_245 (208)  [1/1] 8.75ns  loc: ../sobel_sw_new.c:90
+:7  call void @_ssdm_op_Write.m_axi.i8P(i8* %OUTPUT_addr_1, i8 %tmp_15, i1 true)
+
+
+ <State 37>: 8.75ns
+ST_37: OUTPUT_addr_resp (198)  [5/5] 8.75ns  loc: ../sobel_sw_new.c:87
+:7  %OUTPUT_addr_resp = call i1 @_ssdm_op_WriteResp.m_axi.i8P(i8* %OUTPUT_addr)
+
+ST_37: OUTPUT_addr_1_resp (209)  [5/5] 8.75ns  loc: ../sobel_sw_new.c:90
+:8  %OUTPUT_addr_1_resp = call i1 @_ssdm_op_WriteResp.m_axi.i8P(i8* %OUTPUT_addr_1)
+
+
+ <State 38>: 8.75ns
+ST_38: OUTPUT_addr_resp (198)  [4/5] 8.75ns  loc: ../sobel_sw_new.c:87
+:7  %OUTPUT_addr_resp = call i1 @_ssdm_op_WriteResp.m_axi.i8P(i8* %OUTPUT_addr)
+
+ST_38: OUTPUT_addr_1_resp (209)  [4/5] 8.75ns  loc: ../sobel_sw_new.c:90
+:8  %OUTPUT_addr_1_resp = call i1 @_ssdm_op_WriteResp.m_axi.i8P(i8* %OUTPUT_addr_1)
+
+
+ <State 39>: 8.75ns
+ST_39: OUTPUT_addr_resp (198)  [3/5] 8.75ns  loc: ../sobel_sw_new.c:87
+:7  %OUTPUT_addr_resp = call i1 @_ssdm_op_WriteResp.m_axi.i8P(i8* %OUTPUT_addr)
+
+ST_39: OUTPUT_addr_1_resp (209)  [3/5] 8.75ns  loc: ../sobel_sw_new.c:90
+:8  %OUTPUT_addr_1_resp = call i1 @_ssdm_op_WriteResp.m_axi.i8P(i8* %OUTPUT_addr_1)
+
+
+ <State 40>: 8.75ns
+ST_40: OUTPUT_addr_resp (198)  [2/5] 8.75ns  loc: ../sobel_sw_new.c:87
+:7  %OUTPUT_addr_resp = call i1 @_ssdm_op_WriteResp.m_axi.i8P(i8* %OUTPUT_addr)
+
+ST_40: OUTPUT_addr_1_resp (209)  [2/5] 8.75ns  loc: ../sobel_sw_new.c:90
+:8  %OUTPUT_addr_1_resp = call i1 @_ssdm_op_WriteResp.m_axi.i8P(i8* %OUTPUT_addr_1)
+
+
+ <State 41>: 8.75ns
+ST_41: empty_9 (113)  [1/1] 0.00ns
+:2  %empty_9 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1022, i64 1022, i64 1022) nounwind
+
+ST_41: StgValue_255 (114)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:82
+:3  call void (...)* @_ssdm_op_SpecLoopName([17 x i8]* @p_str9) nounwind
+
+ST_41: tmp_10 (115)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:82
+:4  %tmp_10 = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @p_str9) nounwind
+
+ST_41: StgValue_257 (116)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:83
+:5  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
+
+ST_41: OUTPUT_addr_resp (198)  [1/5] 8.75ns  loc: ../sobel_sw_new.c:87
+:7  %OUTPUT_addr_resp = call i1 @_ssdm_op_WriteResp.m_axi.i8P(i8* %OUTPUT_addr)
+
+ST_41: StgValue_259 (199)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:88
+:8  br label %8
+
+ST_41: OUTPUT_addr_1_resp (209)  [1/5] 8.75ns  loc: ../sobel_sw_new.c:90
+:8  %OUTPUT_addr_1_resp = call i1 @_ssdm_op_WriteResp.m_axi.i8P(i8* %OUTPUT_addr_1)
+
+ST_41: StgValue_261 (210)  [1/1] 0.00ns
+:9  br label %8
+
+ST_41: empty_10 (212)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:92
+:0  %empty_10 = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @p_str9, i32 %tmp_10) nounwind
+
+ST_41: StgValue_263 (213)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:82
+:1  br label %4
+
+
+ <State 42>: 2.32ns
+ST_42: empty_11 (215)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:93
+:0  %empty_11 = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @p_str7, i32 %tmp_s) nounwind
+
+ST_42: i_1 (216)  [1/1] 2.32ns  loc: ../sobel_sw_new.c:74
+:1  %i_1 = add i9 %i, 1
+
+ST_42: StgValue_266 (217)  [1/1] 0.00ns  loc: ../sobel_sw_new.c:74
+:2  br label %burst.rd.end
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1ns
+The critical path consists of the following:
+	s_axi read on port 'output_r' [5]  (1 ns)
+
+ <State 2>: 8.75ns
+The critical path consists of the following:
+	'getelementptr' operation ('INPUT_addr') [10]  (0 ns)
+	bus request on port 'INPUT_r' (../sobel_sw_new.c:72) [20]  (8.75 ns)
+
+ <State 3>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (../sobel_sw_new.c:72) [20]  (8.75 ns)
+
+ <State 4>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (../sobel_sw_new.c:72) [20]  (8.75 ns)
+
+ <State 5>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (../sobel_sw_new.c:72) [20]  (8.75 ns)
+
+ <State 6>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (../sobel_sw_new.c:72) [20]  (8.75 ns)
+
+ <State 7>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (../sobel_sw_new.c:72) [20]  (8.75 ns)
+
+ <State 8>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (../sobel_sw_new.c:72) [20]  (8.75 ns)
+
+ <State 9>: 2.94ns
+The critical path consists of the following:
+	'phi' operation ('indvar') with incoming values : ('indvar_next') [23]  (0 ns)
+	'icmp' operation ('exitcond6') [24]  (2.94 ns)
+
+ <State 10>: 8.75ns
+The critical path consists of the following:
+	bus read on port 'INPUT_r' (../sobel_sw_new.c:72) [33]  (8.75 ns)
+
+ <State 11>: 3.25ns
+The critical path consists of the following:
+	'getelementptr' operation ('small_input_addr', ../sobel_sw_new.c:72) [34]  (0 ns)
+	'store' operation (../sobel_sw_new.c:72) of variable 'INPUT_addr_read', ../sobel_sw_new.c:72 on array 'small_input', ../sobel_sw_new.c:65 [35]  (3.25 ns)
+
+ <State 12>: 1.59ns
+The critical path consists of the following:
+	'alloca' operation ('position') [39]  (0 ns)
+	'store' operation of constant 3 on local variable 'position' [40]  (1.59 ns)
+
+ <State 13>: 7.16ns
+The critical path consists of the following:
+	'icmp' operation ('exitcond2', ../sobel_sw_new.c:74) [44]  (3.02 ns)
+	blocking operation 4.14 ns on control path)
+
+ <State 14>: 5.58ns
+The critical path consists of the following:
+	'phi' operation ('k') with incoming values : ('k', ../sobel_sw_new.c:76) [55]  (0 ns)
+	'add' operation ('tmp_4', ../sobel_sw_new.c:77) [64]  (2.33 ns)
+	'getelementptr' operation ('small_input_addr_1', ../sobel_sw_new.c:77) [66]  (0 ns)
+	'load' operation ('small_input_load', ../sobel_sw_new.c:77) on array 'small_input', ../sobel_sw_new.c:65 [67]  (3.25 ns)
+
+ <State 15>: 6.51ns
+The critical path consists of the following:
+	'load' operation ('small_input_load', ../sobel_sw_new.c:77) on array 'small_input', ../sobel_sw_new.c:65 [67]  (3.25 ns)
+	'store' operation (../sobel_sw_new.c:77) of variable 'small_input_load', ../sobel_sw_new.c:77 on array 'small_input', ../sobel_sw_new.c:65 [70]  (3.25 ns)
+
+ <State 16>: 2.9ns
+The critical path consists of the following:
+	'load' operation ('position_load_1', ../sobel_sw_new.c:79) on local variable 'position' [74]  (0 ns)
+	'shl' operation ('tmp_3', ../sobel_sw_new.c:79) [75]  (0 ns)
+	'add' operation ('input2_sum5', ../sobel_sw_new.c:79) [77]  (2.9 ns)
+
+ <State 17>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (../sobel_sw_new.c:79) [80]  (8.75 ns)
+
+ <State 18>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (../sobel_sw_new.c:79) [80]  (8.75 ns)
+
+ <State 19>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (../sobel_sw_new.c:79) [80]  (8.75 ns)
+
+ <State 20>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (../sobel_sw_new.c:79) [80]  (8.75 ns)
+
+ <State 21>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (../sobel_sw_new.c:79) [80]  (8.75 ns)
+
+ <State 22>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (../sobel_sw_new.c:79) [80]  (8.75 ns)
+
+ <State 23>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'INPUT_r' (../sobel_sw_new.c:79) [80]  (8.75 ns)
+
+ <State 24>: 5.01ns
+The critical path consists of the following:
+	'icmp' operation ('exitcond3') [84]  (2.94 ns)
+	blocking operation 2.07 ns on control path)
+
+ <State 25>: 8.75ns
+The critical path consists of the following:
+	bus read on port 'INPUT_r' (../sobel_sw_new.c:79) [92]  (8.75 ns)
+
+ <State 26>: 3.25ns
+The critical path consists of the following:
+	'getelementptr' operation ('small_input_addr_3', ../sobel_sw_new.c:79) [95]  (0 ns)
+	'store' operation (../sobel_sw_new.c:79) of variable 'INPUT_addr_1_read', ../sobel_sw_new.c:79 on array 'small_input', ../sobel_sw_new.c:65 [96]  (3.25 ns)
+
+ <State 27>: 4.49ns
+The critical path consists of the following:
+	'load' operation ('position_load', ../sobel_sw_new.c:80) on local variable 'position' [100]  (0 ns)
+	'add' operation ('position', ../sobel_sw_new.c:80) [101]  (2.9 ns)
+	'store' operation (../sobel_sw_new.c:80) of variable 'position', ../sobel_sw_new.c:80 on local variable 'position' [102]  (1.59 ns)
+
+ <State 28>: 5.58ns
+The critical path consists of the following:
+	'phi' operation ('j') with incoming values : ('j', ../sobel_sw_new.c:41->../sobel_sw_new.c:85) [107]  (0 ns)
+	'add' operation ('tmp_38_i', ../sobel_sw_new.c:43->../sobel_sw_new.c:85) [128]  (2.33 ns)
+	'getelementptr' operation ('small_input_addr_6', ../sobel_sw_new.c:43->../sobel_sw_new.c:85) [130]  (0 ns)
+	'load' operation ('small_input_load_3', ../sobel_sw_new.c:43->../sobel_sw_new.c:85) on array 'small_input', ../sobel_sw_new.c:65 [131]  (3.25 ns)
+
+ <State 29>: 5.58ns
+The critical path consists of the following:
+	'add' operation ('tmp_34_i', ../sobel_sw_new.c:42->../sobel_sw_new.c:85) [122]  (2.33 ns)
+	'getelementptr' operation ('small_input_addr_5', ../sobel_sw_new.c:42->../sobel_sw_new.c:85) [124]  (0 ns)
+	'load' operation ('small_input_load_2', ../sobel_sw_new.c:42->../sobel_sw_new.c:85) on array 'small_input', ../sobel_sw_new.c:65 [125]  (3.25 ns)
+
+ <State 30>: 7.9ns
+The critical path consists of the following:
+	'load' operation ('small_input_load_2', ../sobel_sw_new.c:42->../sobel_sw_new.c:85) on array 'small_input', ../sobel_sw_new.c:65 [125]  (3.25 ns)
+	'add' operation ('res_7_i', ../sobel_sw_new.c:43->../sobel_sw_new.c:85) [153]  (2.32 ns)
+	'sub' operation ('res_8_i', ../sobel_sw_new.c:44->../sobel_sw_new.c:85) [155]  (2.32 ns)
+
+ <State 31>: 7.01ns
+The critical path consists of the following:
+	'load' operation ('small_input_load_5', ../sobel_sw_new.c:45->../sobel_sw_new.c:85) on array 'small_input', ../sobel_sw_new.c:65 [143]  (3.25 ns)
+	'sub' operation ('res_9_i', ../sobel_sw_new.c:45->../sobel_sw_new.c:85) [156]  (1.88 ns)
+	'sub' operation ('res', ../sobel_sw_new.c:46->../sobel_sw_new.c:85) [157]  (1.88 ns)
+
+ <State 32>: 7.9ns
+The critical path consists of the following:
+	'load' operation ('small_input_load_7', ../sobel_sw_new.c:22->../sobel_sw_new.c:85) on array 'small_input', ../sobel_sw_new.c:65 [164]  (3.25 ns)
+	'add' operation ('res_2_i', ../sobel_sw_new.c:23->../sobel_sw_new.c:85) [175]  (2.32 ns)
+	'sub' operation ('res_3_i', ../sobel_sw_new.c:24->../sobel_sw_new.c:85) [177]  (2.32 ns)
+
+ <State 33>: 6.69ns
+The critical path consists of the following:
+	'sub' operation ('res_4_i', ../sobel_sw_new.c:25->../sobel_sw_new.c:85) [178]  (1.88 ns)
+	'sub' operation ('res', ../sobel_sw_new.c:26->../sobel_sw_new.c:85) [179]  (1.88 ns)
+	'icmp' operation ('abscond4', ../sobel_sw_new.c:26->../sobel_sw_new.c:85) [181]  (2.94 ns)
+
+ <State 34>: 9.56ns
+The critical path consists of the following:
+	'select' operation ('abs5', ../sobel_sw_new.c:26->../sobel_sw_new.c:85) [182]  (2.07 ns)
+	'add' operation ('p', ../sobel_sw_new.c:85) [186]  (2.33 ns)
+	'icmp' operation ('icmp', ../sobel_sw_new.c:86) [188]  (3.1 ns)
+	blocking operation 2.07 ns on control path)
+
+ <State 35>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'OUTPUT_r' (../sobel_sw_new.c:87) [196]  (8.75 ns)
+
+ <State 36>: 8.75ns
+The critical path consists of the following:
+	bus write on port 'OUTPUT_r' (../sobel_sw_new.c:87) [197]  (8.75 ns)
+
+ <State 37>: 8.75ns
+The critical path consists of the following:
+	bus access on port 'OUTPUT_r' (../sobel_sw_new.c:87) [198]  (8.75 ns)
+
+ <State 38>: 8.75ns
+The critical path consists of the following:
+	bus access on port 'OUTPUT_r' (../sobel_sw_new.c:87) [198]  (8.75 ns)
+
+ <State 39>: 8.75ns
+The critical path consists of the following:
+	bus access on port 'OUTPUT_r' (../sobel_sw_new.c:87) [198]  (8.75 ns)
+
+ <State 40>: 8.75ns
+The critical path consists of the following:
+	bus access on port 'OUTPUT_r' (../sobel_sw_new.c:87) [198]  (8.75 ns)
+
+ <State 41>: 8.75ns
+The critical path consists of the following:
+	bus access on port 'OUTPUT_r' (../sobel_sw_new.c:87) [198]  (8.75 ns)
+
+ <State 42>: 2.32ns
+The critical path consists of the following:
+	'add' operation ('i', ../sobel_sw_new.c:74) [216]  (2.32 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+	State 39
+	State 40
+	State 41
+	State 42
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
